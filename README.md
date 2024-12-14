@@ -3,13 +3,13 @@
     <img src="pict/logo.png" alt="logo" width="200">
 </h1>
 
-# Dynamic Routing 
-Welcome to the Dynamic Routing Repository. This documentation will guide you through understanding and setting up Dynamic Routing on your computer. You will receive all the necessary knowledge and tools from this comprehensive guide.
+# Dynamic Routing
+Welcome to the Dynamic Routing Repository. This documentation will guide you through understanding and setting up Dynamic Routing on your system. You will find all the necessary information and tools in this comprehensive guide.
 
 ## Table of Contents
 1. [Configuration](#configuration)
 2. [Prerequisites](#prerequisites)
-3. [Your Steps](#steps)
+3. [Steps](#steps)
 
 # Configuration
 <h1 align="center">
@@ -18,7 +18,7 @@ Welcome to the Dynamic Routing Repository. This documentation will guide you thr
 </h1>
 
 # Prerequisites
-Before you proceed with the steps, make sure you have the following prerequisites:
+Before proceeding with the setup, ensure that you have the following prerequisites:
 
 1. **Ubuntu**: If you are using Windows, you can download Ubuntu from:
     [Ubuntu](https://ubuntu.com/desktop/wsl)
@@ -32,16 +32,16 @@ Before you proceed with the steps, make sure you have the following prerequisite
     cd mininet
     ```
 
-4. Install all Mininet companions by running the following command:
+4. Install all Mininet dependencies by running the following command:
 
     ```bash
-    mininet/util/install.sh
+    ./util/install.sh -a
     ```
 
-5. Once the installation is complete, you can proceed to the next steps.
+5. Once the installation is complete, you can proceed with the next steps.
 
 # Steps
-Follow the steps below to get the system up and running on your computer:
+Follow the instructions below to get the system up and running:
 
 1. Clone the repository:
 
@@ -55,7 +55,7 @@ Follow the steps below to get the system up and running on your computer:
     cd dynamic-routing
     ```
 
-3. Run the project with the following command:
+3. Run the project using the following command:
 
     ```bash
     sudo python3 dynamic_routing.py -c frr-config
@@ -67,7 +67,7 @@ Follow the steps below to get the system up and running on your computer:
     h1 traceroute -I h2
     ```
 
-5. If you are down line r1 to r2 with this command, you can still traceroute it:
+5. Even if the link between r1 and r2 is down, you can still perform a traceroute:
 
     ```bash
     link r1 r2 down
