@@ -68,13 +68,13 @@ Follow the instructions below to get the system up and running:
 4. To test the setup, you can use the following command in the terminal:
 
     ```bash
-    h1 traceroute -I h2
+    h1 traceroute -n h2
     ```
 
 5. Even if the link between r1 and r2 is down, you can still perform a traceroute:
 
     ```bash
     link r1 r2 down
-    h1 traceroute -I h2
+    h1 traceroute -n h2
     ```
 ---
