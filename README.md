@@ -52,13 +52,17 @@ Follow the instructions below to get the system up and running:
 2. Navigate to the project directory:
 
     ```bash
-    cd dynamic-routing
+    cd JKL-DynamicRouting
+    ```
+3. Change the config storage place in the dynamic_routing.py file according to your ubuntu environment (line 39)
+    ```bash
+   ('/etc/frr', '/home/yourusername/net101/projects/frr-config/%(name)s')
     ```
 
 3. Run the project using the following command:
 
     ```bash
-    sudo python3 dynamic_routing.py -c frr-config
+    sudo python3 dynamic_routing.py
     ```
 
 4. To test the setup, you can use the following command in the terminal:
